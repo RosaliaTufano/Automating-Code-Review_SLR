@@ -1,6 +1,6 @@
 # Automating Code Review: A Systematic Literature Review
 
-This is the replication package of the work _"Automating Code Review: A Systematic Literature Review"_ by Rosalia Tufano and Gabriele Bavota.
+This is the online appendix of the work _"Automating Code Review: A Systematic Literature Review"_ by Rosalia Tufano and Gabriele Bavota.
 
 ## Content
 
