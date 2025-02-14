@@ -1,0 +1,263 @@
+Title,Venue short,Year,Task Type,Task,Programming Language(s),Training Set Size,Test Set Size,Granularity,Pre-Training,is_ML_Based,ML Technique,Approach,Evaluation Metrics,Solution in industry,Qualitative,Link Replication Package,is_RP_still_available
+A Multi-Step Learning Approach to Assist Code Review,SANER,2023,Code Change Quality Check,Predicting Problematic Code Elements,Java,"2,349.1k","1,174.6k",Code line,TRUE,TRUE,"BERT, RoBERTa, CodeBERT, and GraphCodeBERT",DL,"PrecisionRecallF1-score",FALSE,TRUE,NO,-
+A hybrid approach to code reviewer recommendation with collaborative filtering,SoftwareMining,2017,Other,Recommending Reviewers,Independent,15.5k,3k,PR,FALSE,TRUE,Stochastic Gradient Descent,ML,"Precision@k Recall@k",FALSE,FALSE,NO,-
+A multi-objective effort-aware approach for early code review prediction and prioritization,EMSE,2024,Time Management,Prioritizing Review Requests,Independent,146.6k (10-fold cross-validation),146.6k (10-fold cross-validation),Code change,FALSE,FALSE,-,Search-based,"Area Under the ROC Curve Accuracy Performance Optimization",FALSE,FALSE,https://github.com/stilab-ets/CostAwareCR,YES
+A multi-objective effort-aware approach for early code review prediction and prioritization,EMSE,2024,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Independent,146.6k (10-fold cross-validation),146.6k (10-fold cross-validation),Code change,FALSE,FALSE,-,Search-based,"Area Under the ROC CurveAccuracyPerformance Optimization",FALSE,FALSE,https://github.com/stilab-ets/CostAwareCR,YES
+A prelinary investigation on using multi-task learning to predict change performance in code reviews,EMSE,2024,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Independent,661'392,661'392,Code change,FALSE,TRUE,"Shared-Bottom, OMoE, MMoE, ESMM, SNR, CGC, PLE, and AITM",ML,"Mean Absolute Error
+Root Mean Squared Error Normalized Root Mean Squared Error",FALSE,FALSE,https://figshare.com/s/7930029ea5ec5af2845d,YES
+A prelinary investigation on using multi-task learning to predict change performance in code reviews,EMSE,2024,Time Management,Predicting Pull Request/Code Review Completion Time,Independent,661'392,661'392,Code change,FALSE,TRUE,"Shared-Bottom, OMoE, MMoE, ESMM, SNR, CGC, PLE, and AITM",ML,"Precision
+Recall
+F1-score
+Area Under the ROC Curve",FALSE,FALSE,https://figshare.com/s/7930029ea5ec5af2845d,YES
+AI-Assisted Assessment of Coding Practices in Modern Code Review,AIWARE,2024,Code Change Quality Check,Generating Review Comments,"C++, Java, Python, Go",800k,-,Code change,TRUE,TRUE,T5,DL,"total duration of code reviews
+time developers actively spent on the code review
+number of review iterations
+coding speed",TRUE,TRUE,NO,-
+AUGER: automatically generating review comments with pre-training models,ESEC/FSE,2022,Code Change Quality Check,Generating Review Comments,Java,~117k,~11.7k,Method,TRUE,TRUE,T5-based (CodeTrans),DL,"ROUGE-L  Precision  Recall  F1-score  Exact Match",FALSE,FALSE,https://gitlab.com/ai-for-se-public-data/auger-fse-2022,YES
+Adopting Learning-to-rank Algorithm for Reviewer Recommendation ,CSASE,2022,Other,Recommending Reviewers,Independent,from ~50k to ~450k (sliding window  apporoach),~50k,PR,FALSE,TRUE,Learning-to-rank,ML,"Mean Reciprocal Rank
+Top-k",FALSE,FALSE,https://github.com/liuj888/ReviewerRecommendationLtR,YES
+An Empirical Study on Code Review Activity Prediction and Its Impact in Practice,PACMSE,2024,Code Change Quality Check,Predicting Problematic Code Elements,"Python, C++",-,-,File,TRUE,TRUE,"Bag-of-Words (BoW)
+Bloom (LLM)",ML + DL,"Area Under the ROC Curve
+F1-score
+Geometric Mean Precision Recall",FALSE,TRUE,https://zenodo.org/records/10783562,YES
+AutoTransform: Automated Code Transformation to Support Modern Code Review Process,ICSE,2022,Revised Code Generation,Predicting the Code Output of the Review Process,Java,~118k,~14.7k,Method,FALSE,TRUE,Transformer-based NMT,DL,Exact Match@k,FALSE,FALSE,https://github.com/awsm-research/AutoTransform-Replication,YES
+Automated Identification of Toxic Code Reviews Using ToxiCR,TOSEM,2023,Code Review Sent. Analysis,Identifying Toxic/Uncivil Code Review Comments,Independent,19651 (10-fold cross-validation),19651 (10-fold cross-validation),Comment,TRUE,TRUE,Varie,ML + DL,"Precision Recall F1-score Accuracy",FALSE,FALSE,https://github.com/WSU-SEAL/ToxiCR,YES
+Automatic classification of review comments in pull-based development model,SEKE,2017,Other,Classifying the Goal of a Review Comment or the Type of Change Triggered by a Comment,Independent,"5,645 (10-fold cross-validation)","5,645 (10-fold cross-validation)",Review comment,FALSE,TRUE,SVM,ML,"Precision  Recall  F1-score",FALSE,FALSE,https://www.trustie.net/projects/2455,YES
+Automatic patch linkage detection in code review using textual content and file location features,JIST,2021,Code Change Analysis,Linking Similar Contributions,Java (the code is not used),-,383k,Commit/Patch,FALSE,FALSE,-,Heuristic-based,"Recall@k Precision@k  Mean Reciprocal Rank@k",FALSE,FALSE,https://github.com/dong-w/Replication-Patch-Linkage,YES
+Automatically Recommending Peer Reviewers in Modern Code Review,TSE,2016,Other,Recommending Reviewers,Independent,-,"1,287",PR,FALSE,FALSE,-,Heuristic-based,"Precision@k  Recall@k  F-score@k  Mean Reciprocal Rank@k",FALSE,FALSE,http://serl.cs.wichita.edu/svn/projects/CodeReview/CodeReview/trunk/Data,NO
+CodeReviewer: Automating Code Review Activities by Large-Scale Pre-Training,ESEC/FSE,2022,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review","C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby ",~118k (training) + ~10k (validation),~10k,Code change hunk,TRUE,TRUE,T5,DL,"Accuracy
+Precision
+Recall
+F1-score",FALSE,FALSE,https://github.com/microsoft/CodeBERT/tree/master/CodeReviewer,YES
+CodeReviewer: Automating Code Review Activities by Large-Scale Pre-Training,ESEC/FSE,2022,Code Change Quality Check,Generating Review Comments,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby ",~118k (training) + ~10k (validation),~10k,Code change hunk,TRUE,TRUE,T5,DL,BLEU-4,FALSE,TRUE,https://github.com/microsoft/CodeBERT/tree/master/CodeReviewer,YES
+CodeReviewer: Automating Code Review Activities by Large-Scale Pre-Training,ESEC/FSE,2022,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby ",~118k (training) + ~10k (validation),~10k,Code change hunk,TRUE,TRUE,T5,DL,BLEU-4,FALSE,TRUE,https://github.com/microsoft/CodeBERT/tree/master/CodeReviewer,YES
+Automating modern code review processes with code similarity measurement,JIST,2024,Retrieval of Similar CR/CC,Augmenting Reviews,Java,150k,150k,Code change/Comment,FALSE,FALSE,-,IR,"BLEU
+METEOR
+ROUGE
+Exact Match
+Execution time
+
+Manually:
+Suitable
+Same meaning
+Alternative solution
+Not suitable",FALSE,TRUE,https://github.com/ykartal/Github-SourceCode-Review,YES
+BLIMP Tracer: Integrating Build Impact Analysis with Code Review,ICSME,2018,Code Change Classification,Identifying Impactful Code Changes,"C, C++, Java, C# … ",-,-,Commit,FALSE,FALSE,-,Heuristic-based,-,TRUE,TRUE,NO,-
+CORE: Automating Review Recommendation for Code Changes,SANER,2020,Retrieval of Similar CR/CC,Augmenting Reviews,Java,~257.6k,~85.9k,Diff hunk,FALSE,TRUE,LSTM,DL,"Recall@k  Mean Reciprocal Rank",FALSE,TRUE,https://sites.google.com/view/core2019/,YES
+CORMS: a GitHub and Gerrit based hybrid code reviewer recommendation approach for modern code review,ESEC/FSE,2022,Other,Recommending Reviewers,Independent,24.5k,6.1k,PR,FALSE,TRUE,SVM,ML,"Accuracy@k Mean Reciprocal Rank",FALSE,FALSE,http://cormstool.herokuapp.com,NO
+CORRECT: Code Reviewer Recommendation in GitHub Based on Cross-Project and Technology Experience,ICSE-C,2016,Other,Recommending Reviewers,"Python, Java, Ruby",15.2k (training) + 3.7k (validation),17.1k,PR,FALSE,FALSE,-,Heuristic-based,"Accuracy@k  Precision  Recall  Mean Reciprocal Rank",FALSE,FALSE,https://www.usask.ca/~mor543/correct,NO
+CoRA: Decomposing and Describing Tangled Code Changes for Reviewer,ASE,2019,Code Change Analysis,Decomposing Tangled Commit,Java,-,50,Commit,FALSE,FALSE,-,Heuristic-based,"Accuracy  Mean Average Precision Mean Reciprocal Rank",FALSE,TRUE,NO,-
+Code Review Knowledge Perception: Fusing Multi-Features for Salient-Class Location,TSE,2022,Code Change Analysis,Predicting Salient-Class,Java,7.6k (10-fold cross-validation),7.6k (10-fold cross-validation),Commit,FALSE,TRUE,Random Forest,ML,"Precision  Recall  Accuracy",FALSE,TRUE,NO,-
+Code Reviewer Recommendation Based on a Hypergraph with Multiplex Relationships,SANER,2024,Other,Recommending Reviewers,Independent,"48,374","48,374",PR,FALSE,FALSE,-,Graph-based,"Accuracy
+Mean Reciprocal Rank",FALSE,FALSE,https://github.com/cufeinfor/MIRRec,YES
+Code Reviewer Recommendation for Architecture Violations: An Exploratory Study,EASE,2023,Other,Recommending Reviewers,Independent,547,547,Commit,FALSE,FALSE,-,Heuristic-based,"Accuracy Mean Reciprocal Rank",FALSE,FALSE,https://zenodo.org/record/7292881,YES
+CoditT5: Pretraining for Source Code and Natural Language Editing,ASE,2023,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,Java,14k (training) + 1.7k (validation),1.7k,Method,TRUE,TRUE,CodeT5,DL,"BLEU
+Exact Match
+METEOR
+GLEU
+SARI",FALSE,FALSE,https://github.com/EngineeringSoftware/CoditT5,YES
+"CommentFinder: a simpler, faster, more accurate code review comments recommendation",ESEC/FSE,2022,Code Change Quality Check,Generating Review Comments,Java,~151k,~16.8k,Method,FALSE,FALSE,-,IR,"Exact Match,  BELU-4",FALSE,FALSE,https://github.com/awsm-research/CommentFinder,YES
+Contrastive Learning for Multi-Modal Automatic Code Review,SEKE,2022,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Java,"~523.5k Training and test set split not specified","~523.5k Training and test set split not specified",Method,TRUE,TRUE,SimAST-GCN + RoBERTa,DL,"F1-score Matthew’s Correlation Coefficient",FALSE,FALSE,https://github.com/SimAST-GCN/CLMN,YES
+D-ACT: Towards Diff-Aware Code Transformation for Code Review Under a Time-Wise Evaluation,SANER,2023,Revised Code Generation,Predicting the Code Output of the Review Process,Java,51.86k,5.8k,Method,TRUE,TRUE,CodeT5,DL,Accuracy,FALSE,FALSE,https://github.com/awsm-research/D-ACT-Replication-Package,YES
+Deep Review Sharing,SANER,2019,Retrieval of Similar CR/CC,Augmenting Reviews,Java,72.5k (Ground Knowledge),200,Code hunk,FALSE,FALSE,-,IR,"manually:
+#RS: reasonable sharing
+#TC: detected true clone
+#NC: detected non-clone
+R-Rate: proportion of #RS among #TC",FALSE,TRUE,NO,-
+Detection and Elimination of Systematic Labeling Bias in Code Reviewer Recommendation Systems,EASE,2021,Other,Recommending Reviewers,Independent,"9.5k  Training and test set split not specified","9.5k Training and test set split not specified",PR,FALSE,TRUE,"Several reviewer recommendation techniques: Profile-Based, RSTrace, Naive Bayes, k-NN, and Decision Tree",ML,"Accuracy@k Mean Reciprocal Rank",FALSE,FALSE,https://figshare.com/s/1b9ea55377d9f2c31a7a,YES
+Do Words Have Power? Understanding and Fostering Civility in Code Review Discussion,PACMSE,2024,Code Review Sent. Analysis,Identifying Toxic/Uncivil Code Review Comments,Independent,22k,"2.4k + 1k 
++ 252",Comment,TRUE,TRUE,BERT (ToxiCR),DL,"Accuracy
+Precision
+Recall
+F1-score",FALSE,FALSE,https://github.com/Oyakiolo052/ATUC_Artifacts,YES
+Do Words Have Power? Understanding and Fostering Civility in Code Review Discussion,PACMSE,2024,Code Review Sent. Analysis,Rephrasing Toxic/Uncivil Comments,Independent,6.4K,"2k
++ 252",Comment,TRUE,TRUE,"T5
+BART
+NLLB
+MarianMT
+GPT3.5",DL,"Incivility Decrease
+Semantic Similarity
+Sentence Similarity
+Length Dissimilarity
+SentiCR
+SentiStrength-SE
+RoBERTa
+J
+Perplexity",FALSE,TRUE,https://github.com/Oyakiolo052/ATUC_Artifacts,YES
+Don't forget to change these functions! recommending co-changed functions in modern code review,JIST,2024,Code Change Analysis,Impact Analysis for Code Review,"Python, Java, C++",43965,8793,PR,FALSE,FALSE,-,Graph-based,"Accuracy@k
+Recall@k
+Mean Average Precision",FALSE,TRUE,https://github.com/CoChangeFinder/CoChangeFinder,YES
+EARec: Leveraging Expertise and Authority for Pull-Request Reviewer Recommendation in GitHub,CSI-SE,2016,Other,Recommending Reviewers,Independent,15.5k,"1,156",PR,FALSE,FALSE,-,Heuristic-based,"Precision Recall F1-score",FALSE,FALSE,NO,-
+Early prediction for merged vs abandoned code changes in modern code reviews,JIST,2022,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Independent,146.6k,146.6k,Code change,FALSE,TRUE,LightGBM,ML,"Area Under the ROC Curve Cost-Effectiveness  Precision  Recall  F1-score",FALSE,FALSE,https://github.com/khairulislam/Predict-Code-Changes,YES
+Early prediction of merged code changes to prioritize reviewing tasks,EMSE,2018,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Java,166.2k,166.2k,PR,FALSE,TRUE,Random Forest,ML,"Area Under the ROC Curve Cost effectiveness  Normalized Improvement  Precision  Recall  F1-score",FALSE,FALSE,NO,-
+EvaCRC: Evaluating Code Review Comments,ESEC/FSE,2023,Assessing Review Quality,Classifying the Usefulness of Review Comments,Independent,17k (5-fold cross-validation),17k (5-fold cross-validation),Review comment,TRUE,TRUE,"RF, TextCNN, TextRCNN, DPCNN, Transformer, BERT",ML + DL,"Hamming Loss Subset 0/1 Loss Macro-F1 Macro-AUC Precision Recall F1-score Area Under the ROC Curve",TRUE,TRUE,https://zenodo.org/records/8297481,YES
+Example Driven Code Review Explanation,ESEM,2022,Retrieval of Similar CR/CC,Augmenting Reviews,Independent,2978 (Knowledge Base),744,Review comment,FALSE,TRUE,SVM,ML,"Accuracy F1-score",FALSE,FALSE,NO,-
+Example Driven Code Review Explanation,ESEM,2022,Assessing Review Quality,Identifying/Improving Review Comments Needing Further Explanations,Independent,2978 (Knowledge Base),744,Review comment,FALSE,TRUE,SVM,ML,"Accuracy F1-score",FALSE,FALSE,NO,-
+Expanding the Number of Reviewers in Open-Source Projects by Recommending Appropriate Developers,ICSME,2020,Other,Recommending Reviewers,Independent,86.5k,86.5k,PR,FALSE,FALSE,-,Search-based,"Accuracy Mean Reciprocal Rank",FALSE,FALSE,https://github.com/alexchueshev/icsme2020,YES
+Explaining Explanations: An Empirical Study of Explanations in Code Reviews,TOSEM,2024,Assessing Review Quality,Identifying/Improving Review Comments Needing Further Explanations,Independent,30 (Prompt Engineering),90,Review comment,TRUE,TRUE,ChatGPT,DL,"Correct Type
+Correct Explanation
+
+Manually: clarity and informativeness",FALSE,TRUE,https://figshare.com/s/135201b8f87ab705448b,YES
+Exploring the impact of code review factors on the code review comment generation,ASE,2024,Code Change Quality Check,Generating Review Comments,Java,403k (training) + 134k (validation),134k,Code snippet,TRUE,TRUE,"CodeT5
+GPT4",DL,"BLEU
+ROUGE-L
+METEOR
+BERTScore",FALSE,FALSE,https://zenodo.org/records/10964945,YES
+"Factoring Expertise, Workload, and Turnover Into Code Review Recommendation",TSE,2024,Other,Recommending Reviewers,Independent,80k,80k,PR,FALSE,FALSE,-,Heuristic-based,"Mean Reciprocal Rank
+
+Simulation:
+degree of reviewer Expertise
+GiniWork of reviewers
+File at Risk",FALSE,FALSE,https://github.com/rigbypc/SofiaWL/tree/master/ReplicationPackage,YES
+Fine-Tuning Large Language Models to Improve Accuracy and Comprehensibility of Automated Code Review,TOSEM,2024,Code Change Quality Check,Generating Review Comments,"Go, Python, C, C++, JavaScript, Java","19,456",2000,Code diff,TRUE,TRUE,"LLaMA
+LLaMA2
+CodeLLaMA
+Magicoder",DL,"Recall
+Precision
+F1-score
+Accuracy
+
+Manually:
+Degree of Clarity",FALSE,TRUE,https://github.com/aiopsplus/Carllm,YES
+Fine-tuning and prompt engineering for large language models-based code review automation,JIST,2024,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","150,405 (training) + 13,102 (validation) (CodeReviewer)
+134,238 (training) + 16,779 (validation) (Tufano)
+14,690 (training) + 1,836 (validation) (Android)
+9,899 (training) + 1,237 (validation) (Google)
+21,509 (training) + 2,686 (validation) (Ovirt)","13,104(CodeReviewer)
+16,779 (Tufano)
+1,835 (Android)
+1,235 (Google)
+2,688 (Ovirt)",Diff hunk/Method,TRUE,TRUE,"GPT-3.5
+Magicoder",DL,"Exact Match
+CodeBLEU",FALSE,FALSE,https://github.com/awsm-research/LLM-for-code-review-automatiton,YES
+GPP: A Graph-Powered Prioritizer for Code Review Requests,ASE,2024,Time Management,Prioritizing Review Requests,Independent,"426,933","426,933",PR,FALSE,TRUE,Graph Neural Network (Attentive FP),DL,"Normalized Discounted Cumulative Gain Mean Reciprocal Rank
+Mean Average Precision
+Normalized Priority Score",FALSE,FALSE,https://figshare.com/s/133f23da558b7b254041?file=46923235,YES
+Graph-based visualization of merge requests for code review,JSS,2023,Other,Visualizing Code Changes,Java,-,-,PR,FALSE,FALSE,-,Graph-based,-,TRUE,TRUE,https://zenodo.org/record/7047993#.Y2JqNS-B2Uo,YES
+Helping Developers Help Themselves: Automatic Decomposition of Code Review Changesets,ICSE,2015,Code Change Analysis,Decomposing Tangled Commit,C#,-,1k,Commit,FALSE,FALSE,-,Heuristic-based,Number of meaningful partitions identified,FALSE,TRUE,NO,-
+Improving Automated Code Reviews: Learning from Experience,MSR,2024,Code Change Quality Check,Generating Review Comments,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","141,259 (training) + 12,406 (validation)","12,369",Code diff,TRUE,TRUE,CodeT5,DL,"BLEU-4
+
+Manually:
+Semantic Equivalence
+Applicability
+Feedback Type
+Presence of Explanation
+Comment Category",FALSE,TRUE,https://zenodo.org/records/10572047,YES
+Improving Code Refinement for Code Review Via Input Reconstruction and Ensemble Learning,APSEC,2023,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","150,406 (training) + 13,103 (validation)","13,104",Code diff,TRUE,TRUE,CodeT5,IR + DL + Voting,Exact Match,FALSE,FALSE,https://github.com/moonmengmeng/EnRefiner,YES
+Improving the Learning of Code Review Successive Tasks with Cross-Task Knowledge Distillation,PACMSE,2024,Code Change Quality Check,Generating Review Comments,"PhP, Ruby, C#, C, Java, Python, C++, GO, Javascript",150k (training) + 7k (validation),13k,Code diff,TRUE,TRUE,CodeT5,DL,BLEU,FALSE,FALSE,https://zenodo.org/records/10676741,YES
+Improving the Learning of Code Review Successive Tasks with Cross-Task Knowledge Distillation,PACMSE,2024,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"PhP, Ruby, C#, C, Java, Python, C++, GO, Javascript",150k (training) + 7k (validation),13k,Code diff,TRUE,TRUE,CodeT5,DL,CodeBLEU,FALSE,FALSE,https://zenodo.org/records/10676741,YES
+Improving the pull requests review process using learning-to-rank algorithms,EMSE,2019,Code Change Classification,Identifying Quickly Reviewable Changes,Java,100.1k,100.1k,PR,FALSE,TRUE,Random Forest,ML,Normalized Discounted Cumulative Gain,FALSE,TRUE,NO,-
+Incivility detection in open source code review and issue discussions,JSS,2024,Code Review Sent. Analysis,Identifying Toxic/Uncivil Code Review Comments,Independent,"1533 emails 5511 comments 1642 labeled sentences (5-fold cross-validation)","1533 emails 5511 comments 1642 labeled sentences (5-fold cross-validation)",Email text /Review comment/Sentence,TRUE,TRUE,"BERT, CART, KNN, Logistic Regression, Naive Bayes, Random Forest, SVM ",ML + DL,"Precision Recall F1-score Matthew’s Correlation Coefficient",FALSE,FALSE,https://doi.org/10.6084/m9.figshare.24603237,YES
+Integrating Visual Aids to Enhance the Code Reviewer Selection Process,ICSME,2023,Other,Recommending Reviewers,Independent,383,55,PR,FALSE,FALSE,-,Graph-based,"Precision
+Recall
+F1-score
+Mean Reciprocal Rank","Not really, but ...",TRUE,https://zenodo.org/records/8190493,YES
+Intelligent Code Review Assignment for Large Scale Open Source Software Stacks,ASE,2023,Other,Recommending Reviewers,Independent,1k,-,Commit,TRUE,TRUE,BERT + XLNet,DL,"Accuracy F1-score",FALSE,FALSE,NO,-
+LLaMA-Reviewer: Advancing Code Review Automation with Large Language Models through Parameter-Efficient Fine-Tuning,ISSRE,2023,Code Change Quality Check,Generating Review Comments,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","134k (training) + 17k (validation) 118k (training) + 10k (validation)","17k 10k",Method/Code line,TRUE,TRUE,LLaMA,LLM,BLEU-4,FALSE,FALSE,https://zenodo.org/records/7991113,YES
+LLaMA-Reviewer: Advancing Code Review Automation with Large Language Models through Parameter-Efficient Fine-Tuning,ISSRE,2023,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","134k (training) + 17k (validation) 118k (training) + 10k (validation)","17k 10k",Method/Code line,TRUE,TRUE,LLaMA,DL,BLEU-4,FALSE,FALSE,https://zenodo.org/records/7991113,YES
+LLaMA-Reviewer: Advancing Code Review Automation with Large Language Models through Parameter-Efficient Fine-Tuning,ISSRE,2023,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review","C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","134k (training) + 17k (validation) 118k (training) + 10k (validation)","17k 10k",Method/Code line,TRUE,TRUE,LLaMA,LLM,"Precision
+Recall
+F1-score",FALSE,FALSE,https://zenodo.org/records/7991113,YES
+Large-scale intent analysis for identifying large-review-effort code changes,JIST,2021,Code Change Classification,Identifying Large-review-effort Code Changes,Independent,136k (10-fold cross-validation),136k (10-fold cross-validation),Code changes/Commit,FALSE,TRUE,Random Forest,ML,"Precision  Recall  F1-score Area Under the ROC Curve",TRUE,TRUE,https://bitbucket.org/wangsonging/ist2020_repo/src/master/,YES
+Learning to Predict Code Review Completion Time In Modern Code Review,EMSE,2023,Time Management,Predicting Pull Request/Code Review Completion Time,Independent,286.3k,286.3k,Commit,FALSE,TRUE,Various,ML,"Mean Absolute Error Mean Relative Error Standard Accuracy ",FALSE,FALSE,https://github.com/stilab-ets/MCRDuration,YES
+MULTICR: Predicting Merged and Abandoned Code Changes in Modern Code Review Using Multi-Objective Search,TOSEM,2024,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Independent,Yes,"146,612",Code change,FALSE,FALSE,-,Search-based,"Matthew’s Correlation Coefficient F1-score Precision Recall",FALSE,TRUE,https://github.com/stilab-ets/multicr,YES
+Mining Source Code Improvement Patterns from Similar Code Review Works,IWSC,2019,Retrieval of Similar CR/CC,Mining Code Improvement Patterns,Python,"555,050","61,673",Diff hunk,FALSE,FALSE,-,Sequential pattern mining,Accuracy,FALSE,TRUE,NO,-
+"Mitigating Turnover with Code Review Recommendation: Balancing Expertise, Workload, and Knowledge Distribution",ICSE,2020,Other,Recommending Reviewers,Independent,"82,294","82,294",PR,FALSE,FALSE,-,Mix of reviewer recommender with a new heuristic to mitigate turnover,"Mean Reciprocal Rank Reviewer Expertise Reviewer CoreWorkload File at Risk",FALSE,FALSE,https://github.com/cesel/relationalgit,YES
+Modeling Review History for Reviewer Recommendation: A Hypergraph Approach,ICSE,2022,Other,Recommending Reviewers,Independent,-,87394,PR,FALSE,FALSE,-,Graph-based,"Accuracy
+Mean Reciprocal Rank
+Recommendation Distribution",FALSE,FALSE,NO,-
+"Multi-objective code reviewer recommendations: balancing expertise, availability and collaborations",ASE,2020,Other,Recommending Reviewers,Independent,41.6k,9k,PR,FALSE,FALSE,-,Search-based,"Precision Recall Mean Reciprocal Rank",FALSE,FALSE,NO,-
+Partitioning Composite Code Changes to Facilitate Code Review,MSR,2015,Code Change Analysis,Decomposing Tangled Commit,Java,-,78,Commit/Review,FALSE,FALSE,-,Heuristic-based,Exact Match,FALSE,TRUE,NO,-
+Predicting Design Impactful Changes in Modern Code Review: A Large-Scale Empirical Study,MSR,2021,Code Change Classification,Identifying Impactful Code Changes,Java,21.4k (10-fold cross-validation),21.4k (10-fold cross-validation),Commit,FALSE,TRUE,"Logistic Regression, Naive Bayes, SVM, Decision Tree, Random Forest, Gradient Boosting",ML,"Precision  Recall  F1-score  Area Under the ROC Curve",FALSE,FALSE,https://zenodo.org/record/4563214#.Y0kjiexBwQg,YES
+Predicting Developers' Negative Feelings about Code Review,ICSE,2020,Code Review Sent. Analysis,Identifying “Pushback” Feelings in Reviews,Independent,-,-,Code review,FALSE,FALSE,-,Heuristic-based,"Precision Recall",FALSE,FALSE,In the paper the autors refer to this Supplementary Material. But there is no link,-
+Predicting Usefulness of Code Review Comments Using Textual Features and Developer Experience,MSR,2017,Assessing Review Quality,Classifying the Usefulness of Review Comments,Python,1482 (10-fold cross-validation),1482 (10-fold cross-validation),Review comment,FALSE,TRUE,Random Forest Logistic Regression Naive Bayes,ML,"Precision  Recall  F1-score  Accuracy",FALSE,FALSE,http://homepage.usask.ca/%E2%88%BCmasud.rahman/revhelper,NO
+Quality Evaluation of Modern Code Reviews Through Intelligent Biometric Program Comprehension,TSE,2023,Assessing Review Quality,Assessing Review Quality through Biometrics,C,-,60 reviews/149 code regions,Code review/Code regions,FALSE,TRUE,KNN + Logistic Regression,ML + Rule based,"Precision  Recall  F1-score  Accuracy",FALSE,FALSE,https://github.com/HaythamHijazi/Supplement,YES
+RAID: Tool Support for Refactoring-Aware Code Reviews,ICPC,2021,Other,Visualizing Code Changes,"Java, JavaScript, C, Go",-,-,Diff hunk,FALSE,FALSE,-,Heuristic-based,-,TRUE,TRUE,https://github.com/rodrigo-brito/refactoring-aware-diff,YES
+RSTrace+: Reviewer suggestion using software artifact traceability graphs,JIST,2021,Other,Recommending Reviewers,Independent,-,"77,548",Commit,FALSE,FALSE,-,Graph-based,"Accuracy@k
+Mean Reciprocal Rank",FALSE,FALSE,"https://github.com/sulunemre/rstrace-replication
+
+https://data.mendeley.com/preview/w438t8x35n?a=044a13a6-e7dd-40aa-9cde-9a7672eecb2a",YES
+Recommending Code Reviewers for Proprietary Software Projects: A Large Scale Study,SANER,2022,Other,Recommending Reviewers,Independent,-,-,PR,FALSE,FALSE,-,Graph/Search-based,"Accuracy@k
+Mean Reciprocal Rank
+Mean Precision
+Mean Recall
+Reviewer Coverage",FALSE,FALSE,NO,-
+Recommending Code Reviews Leveraging Code Changes with Structured Information Retrieval,ICSME,2023,Retrieval of Similar CR/CC,Augmenting Reviews,"Java, Python",~39k,~17k,Diff hunk/File,FALSE,FALSE,-,IR,"BLEU Exact Match Semantic Similarity",FALSE,FALSE,Dataset: https://drive.google.com/file/d/15kq7LqvfY-oP1M1UDdK_lLmUfq71daVR/view,YES
+Reducing human effort and improving quality in peer code reviews using automatic static analysis and reviewer recommendation,ICSE,2013,Code Change Quality Check,Reviewing via Static Analysis,Java,-,8711,PR,FALSE,FALSE,-,Heuristic-based,-,TRUE,TRUE,NO,-
+Reducing human effort and improving quality in peer code reviews using automatic static analysis and reviewer recommendation,ICSE,2013,Other,Recommending Reviewers,Java,-,8711,PR,FALSE,FALSE,-,Heuristic-based,Accuracy,FALSE,FALSE,NO,-
+Resolving Code Review Comments with Machine Learning,ICSE-SEIP,2024,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"C++, Python, Java",Yes,-,Diff hunk,TRUE,TRUE,T5X,DL,-,TRUE,TRUE,NO,-
+Review efforts reduction by partitioning of static analysis warnings,SCAM,2013,Other,Partitioning Static Analysis Warnings,C,-,95,Code hunk,FALSE,FALSE,-,Data-flow Analysis,Review effort,FALSE,FALSE,NO,-
+Review4Repair: Code review aided automatic program repairing,JIST,2022,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,Java,~55k,~3k,Diff hunk,FALSE,TRUE,Sequence-to-Sequence,DL,Accuracy,FALSE,TRUE,Dataset: https://zenodo.org/record/4445747#.Y0546exBwQg   Code: https://github.com/Review4Repair/Review4Repair,YES
+Reviewer Recommendation using Software Artifact Traceability Graphs,PROMISE,2019,Other,Recommending Reviewers,Java,942,293.4k,Commit,FALSE,FALSE,-,Heuristic-based,"Accuracy@k Mean Reciprocal Rank",FALSE,FALSE,https://figshare.com/s/27a35b4ae70269481a2c,YES
+Reviewer recommendation for pull-requests in GitHub: What can we learn from code review and bug assignment?,JIST,2016,Other,Recommending Reviewers,"Ruby, C++, Python, PHP, Java",?,~6300,PR,FALSE,TRUE,SVM + Proposed CN,"ML, IR, FL, CN","Precision  Recall  F-measure   Manual analysis",FALSE,FALSE,NO,-
+Search-Based Peer Reviewers Recommendation in Modern Code Review,ICSME,2016,Other,Recommending Reviewers,Independent,34.5k,1k,PR,FALSE,FALSE,-,Search-based,"Precision  Recall  Mean Reciprocal Rank",FALSE,FALSE,NO,-
+Semantics-assisted code review: An efficient tool chain and a user study,ASE,2017,Other,Visualizing Code Changes,Java,-,100,Commit,FALSE,FALSE,-,Impact Analysis-based visualization,-,FALSE,TRUE,NO,-
+SentiCR: A customized sentiment analysis tool for code review interactions,ASE,2017,Code Review Sent. Analysis,Classifying the Sentiment of Review Comments,Independent,1600 (10-fold cross-validation),1600 (10-fold cross-validation),Review comment,FALSE,TRUE,"Adaptive Boosting Decision Tree Gradient Boosting Tree Naïve Bayes Random Forest Multilayer Perceptron SVM with Stochastic Gradient Descent Linear SVM",ML,"Accuracy  Precision  Recall  F-measure",FALSE,FALSE,https://github.com/senticr/SentiCR/,YES
+Striffs: Architectural Component Diagrams for Code Reviews,ICCQ,2021,Other,Visualizing Code Changes,"Java, Go",-,-,Diff hunk,FALSE,FALSE,-,Heuristic-based,-,FALSE,FALSE,https://github.com/hadii-tech/striff-lib,YES
+Supporting automatic code review via design pattern,SERE-C,2013,Code Change Quality Check,Checking Design Patterns Consistency,Java,-,68,File,FALSE,FALSE,-,Heuristic-based,-,FALSE,FALSE,NO,-
+The review linkage graph for code review analytics: A recovery approach and empirical study,ESEC/FSE,2019,Retrieval of Similar CR/CC,Augmenting Reviews,Independent,752,752,Code review,FALSE,TRUE,"SVM, Random Forest, Naïve Bayes, ecc.",ML,"Precision Recall F1-score
+Area Under the ROC Curve",FALSE,FALSE,https://github.com/software-rebels/ReviewLinkageGraph,YES
+Tool Support for Managing Clone Refactorings to Facilitate Code Review in Evolving Software,COMPSAC,2017,Code Change Quality Check,Identifying Clone Refactoring Opportunities,Java,-,1258,PR,FALSE,FALSE,-,Heuristic-based,"Precision  Recall  Accuracy F1-score",FALSE,TRUE,https://faculty.ist.unomaha.edu/msong/pri,NO
+Towards Automated Classification of Code Review Feedback to Support Analytics,ESEM,2023,Other,Classifying the Goal of a Review Comment or the Type of Change Triggered by a Comment,Python,1828 (10-fold cross-validation),1828 (10-fold cross-validation),Review comment,TRUE,TRUE,CodeBERT,DL,"Accuracy Precision Recall F1-score Matthew’s Correlation Coefficient",FALSE,FALSE,https://github.com/WSU-SEAL/CR-classification-ESEM23,YES
+Towards Automating Code Review Activities,ICSE,2021,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,Java,~15.5k,~1.7k,Method,FALSE,TRUE,NMT,DL,"Exact Match BLEU-4 Levenshtein distance",FALSE,TRUE,https://github.com/RosaliaTufano/code_review,YES
+Towards Automating Code Review Activities,ICSE,2021,Revised Code Generation,Predicting the Code Output of the Review Process,Java,~15.5k,~1.7k,Method,FALSE,TRUE,NMT,DL,"Exact Match BLEU-4 Levenshtein distance",FALSE,TRUE,https://github.com/RosaliaTufano/code_review,YES
+Towards Efficient Fine-Tuning of Language Models With Organizational Data for Automated Software Review,TSE,2024,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review","C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby",167k (training) + 66k (validation),66k,Code change,TRUE,TRUE,CodeLlama,DL,"Accuracy
+Precision
+Recall
+F1-score",FALSE,FALSE,NO,-
+Towards Efficient Fine-Tuning of Language Models With Organizational Data for Automated Software Review,TSE,2024,Code Change Quality Check,Generating Review Comments,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby","83k (training) + 28k (validation) 56k (training) + 19k (validation)","28k 19k",Code change/Issue,TRUE,TRUE,CodeLlama,DL,"BLEU
+
+human feedback:
+Technical Accuracy
+Clarity and Readability
+Contextual Understanding and Relevance",FALSE,TRUE,NO,-
+Towards Efficient Fine-Tuning of Language Models With Organizational Data for Automated Software Review,TSE,2024,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,"C, C++, C#, Go, Java, JavaScript, PHP, Python, and Ruby",106k (training) + 35k (validation),35k,Code change/Comment,TRUE,TRUE,CodeLlama,DL,"BLEU
+Exact Match",FALSE,FALSE,NO,-
+ToxiSpanSE: An Explainable Toxicity Detection in Code Review Comments,ESEIW,2023,Code Review Sent. Analysis,Identifying Toxic/Uncivil Code Review Comments,Independent,19651 (10-fold cross-validation),19651 (10-fold cross-validation),Review comment,TRUE,TRUE,"lexicon-based approach transformer-based encoders",DL,"F1-score Precision Recall",FALSE,FALSE,https://github.com/WSU-SEAL/ToxiSpanSE,YES
+Understanding why we cannot model how long a code review will take: an industrial case study,ESEC/FSE ,2022,Time Management,Predicting Pull Request/Code Review Completion Time,Independent,120k,30k,PR,FALSE,TRUE,Random Forest,ML,"Mean Absolute Error Median Absolute Error P75 Max",FALSE,FALSE,NO,-
+Using Large-scale Heterogeneous Graph Representation Learning for Code Review Recommendations at Microsoft,ICSE-SEIP,2023,Other,Recommending Reviewers,Independent,"1,343.8k",254k,PR,FALSE,TRUE,graph convolutional neural network ,DL,"Accuracy Mean Reciprocal Rank",FALSE,TRUE,NO,-
+Using Machine Intelligence to Prioritise Code Review Requests,ICSE-SEIP,2021,Time Management,Prioritizing Review Requests,Independent,-,-,PR,FALSE,TRUE,Bayesian Network,ML,"RMSE  Mean Absolute Error ",TRUE,TRUE,NO,-
+Using Pre-Trained Models to Boost Code Review Automation,ICSE,2022,Code Change Quality Check,Generating Review Comments,Java,~151k,~16.8k,Method,TRUE,TRUE,T5,DL,"Exact Match BLEU-4",FALSE,TRUE,https://github.com/RosaliaTufano/code_review_automation,YES
+Using Pre-Trained Models to Boost Code Review Automation,ICSE,2022,Revised Code Generation,Implementing the Code Change Requested by a Reviewer,Java,~151k,~16.8k,Method,TRUE,TRUE,T5,DL,"Exact Match BLEU-4",FALSE,TRUE,https://github.com/RosaliaTufano/code_review_automation,YES
+Using Pre-Trained Models to Boost Code Review Automation,ICSE,2022,Revised Code Generation,Predicting the Code Output of the Review Process,Java,~151k,~16.8k,Method,TRUE,TRUE,T5,DL,"Exact Match BLEU-4",FALSE,TRUE,https://github.com/RosaliaTufano/code_review_automation,YES
+Using Stack Overflow content to assist in code review,Software - Practice and Experience,2019,Code Change Quality Check,Predicting Code Defectiveness,"Java, C, Python, JavaScript ",-,370 + 1k,File,FALSE,FALSE,-,Heuristic-based,"Matching Ration  F1-score",TRUE,TRUE,NO,-
+Using a Context-Aware Approach to Recommend Code Reviewers: Findings from an Industrial Case Study,ICSE-SEIP,2020,Other,Recommending Reviewers,Independent,-,47,PR,FALSE,TRUE,LightFM algorithm,ML,"Mean Reciprocal Rank Perceived accuracy Candidates perception  Tool feasibility",TRUE,TRUE,NO,-
+Using a balanced scorecard to identify opportunities to improve code review effectiveness: an industrial experience report,EMSE,2021,Assessing Review Quality,Classifying the Usefulness of Review Comments,Independent,1804,200,Review comment,FALSE,TRUE,"Decision Tree Random Forest SVM Multi Layer Perceptron XGBoost Logistic Regression",ML,"Accuracy  Precision  Recall  F1-score",TRUE,TRUE,https://github.com/WSU-SEAL/CRA-usefulness-model,YES
+Using code reviews to automatically configure static analysis tools,EMSE,2022,Other,Configuring Static Code Analysis Tools ,Java,"31,594","1,872",Review comment,FALSE,TRUE,SVM,ML,"Precision  Recall   Micro-Averaged Precision  Macro-Averaged Precision  Macro-Averaged Recall",FALSE,TRUE,https://zenodo.org/record/4399225#.Y1-oSezMK0o,YES
+Using knowledge units of programming languages to recommend reviewers for pull requests: an empirical study,EMSE,2024,Other,Recommending Reviewers,Java,-,-,PR,FALSE,FALSE,-,Heuristic-based,"Accuracy@k
+Mean Average Precision
+Reasonable Recommendation",FALSE,FALSE,https://drive.google.com/drive/folders/1bSC9iRtjKjMTRa9hiyECijgABKGfpyT4,YES
+Using nudges to accelerate code reviews at scale,ESEC/FSE,2022,Time Management,Identifying Blocking Actors in Pull Requests,Independent,-,2875,PR,FALSE,FALSE,-,Heuristic-based,"Mean Absolute Error  Mean Magnitude of Relative Error",TRUE,TRUE,NO,-
+Using nudges to accelerate code reviews at scale,ESEC/FSE,2022,Time Management,Predicting Pull Request/Code Review Completion Time,Independent,-,2875,PR,FALSE,FALSE,-,Heuristic-based,"Mean Absolute Error  Mean Magnitude of Relative Error",TRUE,TRUE,NO,-
+What happens in my code reviews? An investigation on automatically classifying review changes,EMSE,2022,Other,Classifying the Goal of a Review Comment or the Type of Change Triggered by a Comment,Java,1504 (10-fold cross-validation),1504 (10-fold cross-validation),Code change,FALSE,TRUE,"Random Forest, J48 (Decision tree), Naive Bayes",ML,"Precision Recall F1-score
+Area Under the ROC Curve Matthew’s Correlation Coefficient",FALSE,TRUE,https://zenodo.org/records/5592254,YES
+Where Should I Look at? Recommending Lines that Reviewers Should Pay Attention To,SANER,2022,Code Change Quality Check,Predicting Problematic Code Elements,"Python, C++",~8.2k,2'053,PR/File/Line,FALSE,TRUE,"Bag of Words (BoW) Random Forest (RF) Decision Tree (DT) Logistic Regression (LR) Naive Bayes (NB) k-Nearest Neighbours (KNN) Random Guessing",ML,"AUC top-10 accuracy  distance-to-heaven Recall   False alarm rate",FALSE,TRUE,https://github.com/awsm-research/RevSpot-replication-package,YES
+Who should review my code? A file location-based code-reviewer recommendation approach for Modern Code Review,SANER,2015,Other,Recommending Reviewers,Independent,-,42k,PR,FALSE,FALSE,-,Heuristic-based,"Accuracy  Mean Reciprocal Rank",FALSE,FALSE,https://github.com/patanamon/revfinder,YES
+Who should review this change? Putting text and file location analyses together for more accurate recommendations,ICSME,2015,Other,Recommending Reviewers,Independent,42k,42k,Commit,FALSE,TRUE,Naive Bayes Multinomial,ML,"Accuracy  Mean Reciprocal Rank",FALSE,FALSE,NO,-
+WhoDo: Automating reviewer suggestions at scale,ESEC/FSE,2019,Other,Recommending Reviewers,Independent,-,~2k,PR,FALSE,FALSE,-,Heuristic-based,"Hit rate Average number of reviews per PR Average PR completion time  Average per-reviewer active load",TRUE,TRUE,NO,-
+Workload-aware reviewer recommendation using a multi-objective search-based approach,PROMISE,2020,Other,Recommending Reviewers,Independent,-,230090,PR,FALSE,FALSE,-,Search-based,"Precision  Recall  F-measure  Hypervolume",FALSE,FALSE,NO,-
+iReview: an Intelligent Code Review Evaluation Tool using Biofeedback,ISSRE,2021,Assessing Review Quality,Assessing Review Quality through Biometrics,C,-,84,Code review,FALSE,TRUE,K-nearest Neighbors ,ML,"True Positive False Positive False Negative",FALSE,FALSE,NO,-
+Assessing MCR Discussion Usefulness Using Semantic Similarity,IWESEP,2014,Assessing Review Quality,Classifying the Usefulness of Review Comments,Independent,318 (bootstrapping cross-validation),318 (bootstrapping cross-validation),Review comment,FALSE,FALSE,-,Heuristic-based,"Precision  Recall",FALSE,FALSE,NO,-
+Review sharing via deep semi-supervised code clone detection,IEEE Access,2020,Retrieval of Similar CR/CC,Augmenting Reviews,Java,400,2k,Code snippet,FALSE,FALSE,-,Search-based,"Precision  Recall  F1-score",FALSE,FALSE,NO,-
+STYLE-ANALYZER: Fixing code style inconsistencies with interpretable unsupervised algorithms,MSR,2019,Code Change Quality Check,Reviewing Code Formatting Violations,JavaScript,2'652'683,~663k,File,FALSE,TRUE,Random Forest Classifier,ML,"Precision
+Prediction Rate
+Recall
+F1-score
+Rule length
+Training time",FALSE,FALSE,https://github.com/src-d/style-analyzer,YES
+TIRR: A code reviewer recommendation algorithm with topic model and reviewer influence,GLOBECOM,2019,Other,Recommending Reviewers,Independent,22.3k,3439,PR,FALSE,FALSE,-,New algorithm based on topic info,"Precision  Recall  F1-score",FALSE,FALSE,NO,-
+Turn tree into graph: Automatic code review via simplified ast driven graph convolutional network,KBS,2022,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Java,-,109637,Method,FALSE,TRUE,Simplified AST based Graph Convolutional Network,DL,"Accuracy  F1-score Area Under the ROC Curve Matthew’s Correlation Coefficient",FALSE,FALSE,https://github.com/SimAST-GCN/SimAST-GCN,YES
+Who should comment on this pull request? Analyzing attributes for more accurate commenter recommendation in pull-based development,JIST,2017,Other,Recommending Reviewers,Independent,-,"19,543",PR,FALSE,FALSE,-,Heuristic-based,"precision Recall",FALSE,FALSE,NO,-
+Who should make decision on this pull request? Analyzing time-decaying relationships and file similarities for integrator prediction,JSS,2019,Other,Recommending Reviewers,Independent,138.4k,138.4k,PR,FALSE,TRUE,Random Forest Classifier,ML,"Accuracy  Mean Reciprocal Rank",FALSE,TRUE,NO,-
+WhoReview: A multi-objective search-based approach for code reviewers recommendation in modern code review,WFSC,2020,Other,Recommending Reviewers,Independent,38k,4k,Commit,FALSE,FALSE,-,Search-based,"Precision  Recall  Mean Reciprocal Rank Generational Distance 
+Hypervolume Spacing 
+Contribution",TRUE,TRUE,NO,-
+Automatic code review by learning the revision of source code,AAAI,2019,Code Change Classification,"Predicting Code Changes Approval, Merge, or Need for review",Java,~35.6k (10-fold cross-validation),~35.6k (10-fold cross-validation),Method,FALSE,TRUE,CNN and LSTM,DL,"Area Under the ROC Curve F1-score",FALSE,FALSE,NO,-
+Code inspection support for recurring changes with deep learning in evolving software,COMPSAC,2020,Code Change Analysis,Linking Similar Contributions,Java,14k,7k,Code change,FALSE,TRUE,-,DL,F1-score,FALSE,FALSE,https://sites.google.com/unomaha.edu/recurring-changes-deeplearning/,NO
+CoreDevRec: Automatic core member recommendation for contribution evaluation,JCST,2015,Other,Recommending Reviewers,Independent,18'651,18'651,PR,FALSE,TRUE,SVM,ML,"Accuracy@k
+Mean Reciprocal Rank",FALSE,FALSE,NO,-
+Intelligent code reviews using deep learning,KDD,2018,Retrieval of Similar CR/CC,Augmenting Reviews,C#,~164.7k,~18.3k,Code snippet,FALSE,TRUE,LSTM,DL,Mean Reciprocal Rank,TRUE,TRUE,NO,-
+Learning to rank reviewers for pull requests,IEEE Access,2019,Other,Recommending Reviewers,Independent,"43,986 (k-fold cross-validation)","43,986 (k-fold cross-validation)",PR,FALSE,TRUE,Ranking model,ML,"Accuracy Mean Average Precision Mean Reciprocal Rank",FALSE,FALSE,NO,-
+Predicting defectiveness of software patches,ESEM,2016,Code Change Quality Check,Predicting Code Defectiveness,Independent,4.7k (10-fold cross-validation),4.7k (10-fold cross-validation),PR,FALSE,TRUE,Logistic Regression Naaive Bayes Bayesian Network,ML,"Probability of detection Probability of false alarms Balance F-measure  Area Under the ROC Curve",FALSE,FALSE,NO,-
+Predicting Pull Request Completion Time: A Case Study on Large Scale Cloud Services,ESEC/FSE,2019,Time Management,Predicting Pull Request/Code Review Completion Time,Independent,"2,875 PRs (10-fold cross-validation)","2,875 PRs (10-fold cross-validation)",PR,FALSE,TRUE,Regression Algorithms:  Least Squares linear regression Beyesian Ridge regression Gradient Boosting,ML,"Mean Absolute Error  Mean Relative Error",TRUE,TRUE,NO,-
+Profile based recommendation of code reviewers,JIIS,2017,Other,Recommending Reviewers,Independent,-,"42,045",Commit,FALSE,FALSE,-,Heuristic-based,"Precision  Recall  F-measure  Mean Reciprocal Rank",FALSE,FALSE,https://github.com/mfejzer/reviewers_recommendation,YES
